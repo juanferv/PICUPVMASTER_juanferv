@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "PIC"
+dynamic = ["version"]
+authors = [{name="iPronics", email="juan.fernandez@ipronics.com"}]
+requires-python = ">=3.12"
+dependencies = [
+    "gdsfactory~=8.8.8",
+    "gplugins[sax]"
+    ]
+
+[tool.setuptools_scm]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
